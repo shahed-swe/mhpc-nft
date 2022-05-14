@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "paths": {
+            "@/components/*": [
+                "./components/*"
+            ],
+            "@/api/*": [
+                "./api/*"
+            ],
+            // Add more folders based on your project
+        }
+    },
+    "exclude": [
+        "node_modules",
+        ".next"
+    ]
+}
