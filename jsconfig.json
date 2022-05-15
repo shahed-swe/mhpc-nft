@@ -9,6 +9,12 @@
             "@/api/*": [
                 "./api/*"
             ],
+            "@/styles/*":[
+                "./styles/*"
+            ],
+            "@/public/*":[
+                "./public/*"
+            ]
             // Add more folders based on your project
         }
     },
