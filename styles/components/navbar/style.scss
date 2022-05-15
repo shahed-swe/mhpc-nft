@@ -55,43 +55,39 @@
     position: absolute;
     top: 20px;
     right: 0px;
-    color: white;
-    .discord {
-        font-size: x-large;
-    }
-    .insta {
-        font-size: x-large;
-        margin-left: 5px;
-    }
-    .twitter {
-        font-size: x-large;
-        margin-left: 5px;
-    }
-    .wallet-button {
-        margin: 0 20px 0 20px;
-        position: relative;
-        top: -10px;
+    a {
         color: white;
-        font-weight: 400px;
-        background: #20788C;
-        border: 0px;
-        padding: 0.5rem 1rem 0.5rem 1rem;
-    }
-}
-
-@media screen and (max-width: 820px) {
-    .rc_nav a {
-        display: none;
-    }
-    .rc_nav a.icon {
-        float: right;
-        display: block;
-        width: 60px;
+        text-decoration: none;
+        .discord {
+            font-size: x-large;
+        }
+        .insta {
+            font-size: x-large;
+            margin-left: 5px;
+        }
+        .twitter {
+            font-size: x-large;
+            margin-left: 5px;
+        }
+        .wallet-button {
+            margin: 0 20px 0 20px;
+            position: relative;
+            top: -10px;
+            color: white;
+            font-weight: 400px;
+            background: #20788C;
+            border: 0px;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+        }
     }
 }
 
 @media screen and (max-width: 820px) {
     .rc_nav.responsive {
+        position: relative;
+        top: 73px;
+    }
+    .rc_nav_right .response {
         position: relative;
         top: 73px;
     }
@@ -104,5 +100,19 @@
         float: none;
         display: block;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .rc_nav a {
+        display: none;
+    }
+    .rc_nav_right {
+        display: none;
+    }
+    .rc_nav a.icon {
+        float: right;
+        display: block;
+        width: 60px;
     }
 }

@@ -12,6 +12,13 @@ export const Navbar = () => {
         } else {
             x.className = "rc_nav";
         }
+
+        var y = document.getElementById("right_nav");
+        if(y.className === 'rc_nav_right'){
+            y.className += " response";
+        }else{
+            y.className = "rc_nav_right"
+        }
     }
 
 
@@ -27,13 +34,16 @@ export const Navbar = () => {
                 <a href="#about" title="About">TEAM</a>
                 <a href="#contact" title="Contact">CONTACT US</a>
                 <a href="#lego" title="Menu" style={{ fontSize: "18px"}} className="icon" onClick={() => changeNav()}>&#9776;</a>
+                
             </div>
 
             <div className='rc_nav_right' id="right_nav">
-                <FaDiscord className='discord'/>
-                <FaInstagram className='insta'/>
-                <FaTwitter className='twitter'/>
-                <button className='wallet-button'>Wallet</button>
+                <a href="#" title="discord"><FaDiscord className='discord' /></a>
+                <a href="#"><FaInstagram className='insta' /></a>
+                
+                <a href="#"> <FaTwitter className='twitter' /></a>
+                <a href="#"><button className='wallet-button'>Wallet</button></a>
+                
             </div>
         </>
     )
