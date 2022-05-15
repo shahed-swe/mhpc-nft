@@ -7,9 +7,7 @@ const Header = () => {
     const [data, setData] = useState({})
 
     useEffect(() => {
-        return () => {
-            setData(window)
-        }
+        setData(window)
     }, [])
     return (
         <>
