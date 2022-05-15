@@ -1,22 +1,39 @@
 import MHPC_LOGO from '@/public/logo.png'
 import Image from 'next/image'
+import Logo from '@/public/logo.png'
+import { FaDiscord, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 export const Navbar = () => {
+
+    function changeNav() {
+        var x = document.getElementById("centered_nav");
+        if (x.className === "rc_nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "rc_nav";
+        }
+    }
+
+
     return (
         <>
-            <div className="mhpc_logo">
-                <a href="">
-                    <Image src={MHPC_LOGO.src} alt="" height={80} width={111}/>
-                </a>
+            <div id="rc_logo">
+                <Image src={Logo} height={80} width={111} alt={"logo"}/>
             </div>
-            <div className='mhpc_nav' id='centered_nav'>
-                <a href="#home" title='About'>ABOUT</a>
-                <a href="#home" title='Road Map'>ROADMAP</a>
-                <a href="#home" title='Team'>Team</a>
-                <a href="#home" title='Contactus'>CONTACT US</a>
+
+            <div className="rc_nav" id="centered_nav">
+                <a href="#home" title="Home">ABOUT</a>
+                <a href="#services" title="Services">ROADMAP</a>
+                <a href="#about" title="About">TEAM</a>
+                <a href="#contact" title="Contact">CONTACT US</a>
+                <a href="#lego" title="Menu" style={{ fontSize: "18px"}} className="icon" onClick={() => changeNav()}>&#9776;</a>
             </div>
-            <div className='mhpc_nav' id="ending_nav">
-                
+
+            <div className='rc_nav_right' id="right_nav">
+                <FaDiscord className='discord'/>
+                <FaInstagram className='insta'/>
+                <FaTwitter className='twitter'/>
+                <button className='wallet-button'>Wallet</button>
             </div>
         </>
     )

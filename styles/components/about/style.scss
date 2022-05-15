@@ -1,0 +1,30 @@
+.about-section {
+    background-color: #07203F;
+    color: white;
+    height: 300px;
+    .about-innersec {
+        margin: 0 4rem 0 4rem;
+        display: flex;
+        .inner-about {
+            text-align: center;
+            .about-head {
+                font-size: 26px;
+                font-weight: 500;
+            }
+            .main-text {
+                font-weight: 100;
+                font-size: 16px;
+            }
+        }
+        .white-horse {
+            margin-top: 90px;
+        }
+    }
+    .about-last-section {
+        position: relative;
+        height: 100px;
+        // top: -200px;
+        background: linear-gradient(to top, #07203f 0%, #2e5073 100%);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+}

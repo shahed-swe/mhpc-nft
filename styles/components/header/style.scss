@@ -1,0 +1,27 @@
+.header-section {
+    .inner-section {
+        position: absolute;
+        top: 40%;
+        color: white;
+        margin-left: 4rem;
+        font-weight: 100;
+        font-size: 26px;
+        width: 700px;
+        .inner-button {
+            color: white;
+            font-weight: 400px;
+            background: #20788C;
+            border: 0px;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+        }
+    }
+}
+
+.header-last-section {
+    position: relative;
+    height: 200px;
+    top: -200px;
+    background: linear-gradient(359deg, #07203F 10.96%, rgba(7, 32, 63, 0.97) 27.75%, rgba(7, 32, 63, 0.71) 50.69%, rgba(7, 32, 63, 0.23) 73.05%, rgba(7, 32, 63, 0) 89.59%);
+}
