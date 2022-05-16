@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const About  = () => {
     return (
-        <div className="about-section" style={{position: "relative", top:"-200px"}}>
+        <div className="about-section" >
             <div className='about-innersec'>
                 <div className='golden-horse'>
                     <Image src={GolderHorse} alt="golden-horse" />

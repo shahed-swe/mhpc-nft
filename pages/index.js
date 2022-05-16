@@ -7,13 +7,8 @@ import Catalogue from '@/components/catalogue'
 
 export default function Home() {
 
-  const [height, setHeight] = useState() 
-  useEffect(() => {
-    setHeight(window.innerHeight)
-  },[])
-
   return (
-    <div style={{ height: height - 200}}>
+    <div>
       <Head>
         <title>MHPC</title>
       </Head>

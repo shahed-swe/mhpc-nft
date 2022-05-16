@@ -1,12 +1,23 @@
+.header-main {
+    height: 100%;
+    background-image: url("../../../public/background.png");
+}
+
 .header-section {
     .inner-section {
-        position: absolute;
-        top: 20%;
         color: white;
         margin-left: 4rem;
-        font-weight: 100;
-        font-size: 26px;
         width: 50%;
+        position: relative;
+        top: 20%;
+        height: 100%;
+        h1 {
+            padding-top: 10rem;
+            padding-bottom: 2rem;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 26px;
+        }
         .inner-button {
             color: white;
             font-weight: 400px;
@@ -20,8 +31,8 @@
 }
 
 .header-last-section {
-    position: relative;
+    // position: relative;
     height: 200px;
-    top: -200px;
+    // top: -200px;
     background: linear-gradient(359deg, #07203F 10.96%, rgba(7, 32, 63, 0.97) 27.75%, rgba(7, 32, 63, 0.71) 50.69%, rgba(7, 32, 63, 0.23) 73.05%, rgba(7, 32, 63, 0) 89.59%);
 }

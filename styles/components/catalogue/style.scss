@@ -1,4 +1,36 @@
 .catalogue-section {
     color: white;
     background-color: #2E5073;
+    height: 600px;
+    .catalogue-innersec {
+        margin: 0 4rem 3rem 4rem;
+        text-align: center;
+        .title {
+            margin: 0;
+            font-weight: 500;
+            font-size: 26px;
+        }
+        .slogan {
+            margin: 0;
+            font-weight: 100;
+        }
+    }
+    .catalogue-cardsec {
+        margin: 0 4rem 0 4rem;
+        .card {
+            float: left;
+            margin-left: 3rem;
+            height: 410px;
+            width: 410px;
+            .card-text {
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+.catalogue-last-section {
+    height: 100px;
+    background: linear-gradient(to top, #2E5073 0%, #20788C 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
