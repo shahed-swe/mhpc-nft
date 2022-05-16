@@ -4,6 +4,7 @@ import { Navbar } from '@/components/navbar/index'
 import Header from '@/components/header'
 import About from '@/components/about'
 import Catalogue from '@/components/catalogue'
+import Features from '@/components/features'
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Header/>
       <About/>
       <Catalogue/>
+      <Features/>
     </div>
   )
 }

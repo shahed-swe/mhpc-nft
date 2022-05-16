@@ -1,0 +1,53 @@
+.feature-section {
+    color: white;
+    background-color: #20788C;
+    height: 600px;
+    .feature-innersec {
+        margin: 0 4rem 3rem 4rem;
+        text-align: center;
+        p {
+            font-weight: 500;
+            font-size: 26px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    .feature-cardsec {
+        margin: 0 4rem 0 6.5rem;
+        .card {
+            float: left;
+            margin-left: 1rem;
+            height: 336px;
+            width: 305px;
+            background-color: #07203F;
+            text-align: center;
+            .image-section {
+                text-align: center;
+                margin-top: 20px;
+                .card-image {
+                    border-radius: 36px;
+                    background-color: white;
+                    height: 64px;
+                    width: 64px;
+                }
+            }
+            .card-title {
+                font-weight: normal;
+                font-size: 18px;
+            }
+            .card-text {
+                font-weight: lighter;
+                font-size: 14px;
+                padding: 2rem;
+                padding-top: 1rem;
+                color: #C4C4C4;
+            }
+        }
+        .card-image {
+            width: 100%;
+        }
+        .card-text {
+            font-weight: 100;
+        }
+    }
+}
