@@ -1,7 +1,7 @@
 .feature-section {
     color: white;
     background-color: #20788C;
-    height: 600px;
+    height: 400px;
     .feature-innersec {
         margin: 0 4rem 3rem 4rem;
         text-align: center;
@@ -17,8 +17,8 @@
         .card {
             float: left;
             margin-left: 1rem;
-            height: 336px;
-            width: 305px;
+            height: 236px;
+            width: 317px;
             background-color: #07203F;
             text-align: center;
             .image-section {
@@ -50,4 +50,42 @@
             font-weight: 100;
         }
     }
+}
+
+@media screen and (max-width: 820px) {
+    .feature-section {
+        height: 1700px;
+    }
+    .feature-cardsec {
+        text-align: center;
+        .card {
+            float: none;
+            width: 60% !important;
+            margin-left: 7rem !important;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .feature-section {
+        height: 1500px;
+    }
+    .feature-cardsec {
+        .card {
+            float: none;
+            height: 436px;
+            width: 217px !important;
+            margin-top: 3rem;
+            margin-left: -1.5rem !important;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.feature-last-section {
+    height: 100px;
+    background: linear-gradient(to top, #20788C 0%, #2E5073 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
