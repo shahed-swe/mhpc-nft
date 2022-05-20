@@ -32,6 +32,25 @@
     }
 }
 
+@media screen and (max-width: 1580px) {
+    .catalogue-section {
+        height: 1300px;
+    }
+    .catalogue-cardsec {
+        text-align: center;
+        .card {
+            float: none;
+            width: 30% !important;
+            margin-left: 10rem !important;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            .card-image {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 820px) {
     .catalogue-section {
         height: 1700px;

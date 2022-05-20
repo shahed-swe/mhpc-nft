@@ -52,6 +52,22 @@
     }
 }
 
+@media screen and (max-width: 1580px) {
+    .feature-section {
+        height: 1700px;
+    }
+    .feature-cardsec {
+        text-align: center;
+        .card {
+            float: none;
+            width: 30% !important;
+            margin-left: 10rem !important;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
 @media screen and (max-width: 820px) {
     .feature-section {
         height: 1700px;
