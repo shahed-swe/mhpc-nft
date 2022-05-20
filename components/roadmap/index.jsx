@@ -1,7 +1,8 @@
-const RoadMap = () => {
-    return (
-        <h1>Hello</h1>
-    )
-}
+import { Timeline } from "./nodes";
+
+
+const RoadMap = () => <>
+    <Timeline />
+</>;
 
 export default RoadMap
