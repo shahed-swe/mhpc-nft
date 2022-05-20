@@ -18,7 +18,7 @@ const Mining = () => {
                     <button className='inner-button'>MINT</button>
                 </div>
             </div>
-            {/* <div className='mining-last-section'></div> */}
+            <div className='mining-last-section'></div>
         </div>
     )
 }

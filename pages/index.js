@@ -7,6 +7,7 @@ import Catalogue from '@/components/catalogue'
 import Features from '@/components/features'
 import RoadMap from '@/components/roadmap'
 import Mining from '@/components/mining'
+import Founder from '@/components/founder'
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Features/>
       <RoadMap/>
       <Mining/>
+      <Founder/>
     </div>
   )
 }
