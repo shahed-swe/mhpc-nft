@@ -5,6 +5,7 @@ import Header from '@/components/header'
 import About from '@/components/about'
 import Catalogue from '@/components/catalogue'
 import Features from '@/components/features'
+import RoadMap from '@/components/roadmap'
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
       <About/>
       <Catalogue/>
       <Features/>
+      <RoadMap/>
     </div>
   )
 }

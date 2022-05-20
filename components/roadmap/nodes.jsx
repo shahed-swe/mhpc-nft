@@ -1,107 +1,62 @@
 const timelineData = [
     {
-        text: 'Started working on the app-ideas repository',
-        date: 'February 25 2019',
+        text: 'Vision & Value',
+        date: '01',
         category: {
             tag: 'app-ideas',
             color: '#FFDB14'
         },
         link: {
-            url: '#!',
-            text: 'Check it out on GitHub'
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
         }
     },
     {
-        text: 'Started the Weekly Coding Challenge program',
-        date: 'March 04 2019',
+        text: 'Community',
+        date: '02',
         category: {
             tag: 'blog',
             color: '#e17b77'
         },
         link: {
-            url: '#!',
-            text: 'Check it out here'
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
         }
     },
     {
-        text: 'Got 1.000 followers on Twitter',
-        date: 'March 07 2019',
+        text: 'Metaverse',
+        date: '03',
         category: {
             tag: 'twitter',
             color: '#1DA1F2'
         },
         link: {
-            url: '#!',
-            text: 'See profile'
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
         }
     },
     {
         text:
-            'I published my first article in the FreeCodeCamp Medium Publication',
-        date: 'March 18 2019',
+            'Physical world',
+        date: '04',
         category: {
             tag: 'medium',
             color: '#018f69'
         },
         link: {
-            url:
-                '#!',
-            text: 'Check it out here'
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
         }
     },
     {
-        text: 'Over 12.000 views in a single day on my Medium posts',
-        date: 'April 05 2019',
+        text: 'Bridge Between',
+        date: '05',
         category: {
             tag: 'medium',
             color: '#018f69'
         },
         link: {
-            url: '#!',
-            text: 'See profile'
+            text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
         }
     }
 ]
 
-const headerData = [
-    {
-        heading: 'React Timeline',
-        subheading: 'Made with React.',
-        author: 'Fred Siika',
-        date: 'July 20 2020',
-        category: {
-            tag: 'Codepen',
-            color: 'white',
-            background: 'linear-gradient(45deg, #2989d8 0%, #7db9e8 100%);'
-        },
-        link: {
-            url: 'https://codepen.io/fredsiika1/pen/EJvWBZ',
-            text: `See more from Fred.`
-        },
-        social: {
-            github: {
-                name: 'GitHub',
-                url: 'https://github.com/fredsiika',
-            },
-            codepen: {
-                name: 'Codepen',
-                url: 'https://codepen.io/fredsiika1'
-            },
-            linkedIn: {
-                name: 'LinkedIn',
-                url: 'https://linkedin.com/in/fredsiika',
-            },
-            instagram: {
-                name: 'Instagram',
-                url: 'https://instagram.com/fredsiika',
-            },
-            twitter: {
-                name: 'Twitter',
-                url: 'https://twitter.com/fredsiika',
-            },
-        }
-    }
-]
 
 
 
@@ -111,19 +66,12 @@ const headerData = [
 const TimelineItem = ({ data }) => (
     <div className="timeline-item">
         <div className="timeline-item-content">
-            <span className="tag" style={{ background: data.category.color }}>
-                {data.category.tag}
-            </span>
-            <time>{data.date}</time>
-            <p>{data.text}</p>
+            <div className="number">{data.date}</div>
+            <h3 className="slogan">{data.text}</h3>
             {data.link && (
-                <a
-                    href={data.link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
+                <div className="normal-text">
                     {data.link.text}
-                </a>
+                </div>
             )}
 
         </div>

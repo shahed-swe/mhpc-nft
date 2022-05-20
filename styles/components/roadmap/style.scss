@@ -1,161 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
-/* Global */
-
-:root {
-    font-size: calc(1vw + 1vh + .5vmin);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-}
-
-h1 {
-    text-align: center;
-}
-
-
-/* Default links */
-
-a[href]:not([class]) {
-    color: #ffc6ff;
-    text-decoration: none;
-}
-
-#app {
-    padding: 0 1.25em;
-    width: 100%;
-}
-
-
-/* ===== Header ==== */
-
-
-/* Intrinsic Ratio Boxes - Using 20% for padding makes the height of the box equal to 20% of its width. No matter the width of the viewport, the child div will keep its aspect ratio (100% / 20% = 5:1). Source: https://github.com/AllThingsSmitty/css-protips#intrinsic-ratio-boxes */
-
-.header-container {
-    height: 0;
-    padding-bottom: 20%;
-    position: relative;
-    margin: 20px 0;
-}
-
-.header-item {
-    background: linear-gradient(45deg, #2989d8, 0%, #7db9e8 100%);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.header-item-content {}
-
-.header-item-content .author {
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    top: -10px;
-    left: 5px;
-    letter-spacing: 1px;
-    padding: 5px;
-    position: absolute;
-    text-transform: uppercase;
-}
-
-.header-item-content .sub {
-    font-weight: bold;
-    color: #fff;
-    font-size: 12px;
-    line-height: 1.6;
-    position: absolute;
-    bottom: -20px;
-    left: 5px;
-    letter-spacing: 1px;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-.header-item-content .social {
-    color: #fff;
-    font-size: 12px;
-    font-weight: bold;
-    top: -10px;
-    right: 5px;
-    letter-spacing: 1px;
-    padding: 5px;
-    position: absolute;
-    text-transform: uppercase;
-}
-
-nav {
-    background-color: #384150;
-    padding: 2em;
-    text-align: center;
-    position: relative;
-    height: 80px;
-}
-
-nav ul {
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 1em;
-    padding: 0.25em 1em;
-    text-transform: uppercase;
-}
-
-nav li:not(:last-child) {
-    border-right: 1px solid #fff;
-}
-
-nav a {
-    color: #ccc;
-    text-decoration: none;
-}
-
-nav a:hover {
-    border-bottom: 1px solid #16db93;
-}
-
-
-/* Timeline */
-
 .timeline-container {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 40px 0;
+    // margin: 40px 0;
+    background-color: #2E5073;
 }
 
 .timeline-container::after {
-    background-color: #e17b77;
+    background-color: #DCDCDC;
     content: '';
     position: absolute;
-    left: calc(50% - 2px);
-    width: 4px;
+    left: calc(50% - 3px);
+    width: 1px;
     height: 100%;
 }
 
 .timeline-item {
     display: flex;
+    color: white;
     justify-content: flex-end;
     padding-right: 30px;
     position: relative;
-    margin: 10px 0;
+    margin: 1rem -2rem 1rem -2rem;
     width: 50%;
 }
 
@@ -169,7 +35,7 @@ nav a:hover {
 .timeline-item-content {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #38618B;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -177,10 +43,29 @@ nav a:hover {
     position: relative;
     width: 400px;
     max-width: 100%;
-    text-align: right;
+    text-align: left;
+    .number {
+        font-size: 38px;
+        margin-bottom: 0;
+    }
+    .slogan {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 3400;
+    }
+    .normal-text {
+        margin-top: 0.5rem;
+        font-weight: 100;
+        font-size: 18px;
+    }
 }
 
 .timeline-item:nth-child(odd) .timeline-item-content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.timeline-item:nth-child(even) .timeline-item-content {
     text-align: left;
     align-items: flex-start;
 }
@@ -276,29 +161,4 @@ nav a:hover {
     .timeline-item-content a::after {
         display: none;
     }
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
 }
