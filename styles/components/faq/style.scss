@@ -5,7 +5,7 @@
     margin: 0;
     background-color: #2E5073;
     .faq-inner {
-        margin: 0 4rem 0 4rem;
+        margin: 0 7rem 0 7rem;
     }
     .faq-header {
         text-align: center;
@@ -58,4 +58,10 @@ button.accordion.is-open:before {
     overflow: hidden;
     font-weight: 100;
     transition: max-height 0.2s ease-in-out;
+}
+
+.faq-last-section {
+    height: 100px;
+    background: linear-gradient(to top, #2E5073 0%, #07203F 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }

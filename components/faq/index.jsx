@@ -48,7 +48,7 @@ const FAQ = () => {
                 })}
                 
             </div>
-            
+            <div className="faq-last-section"></div>
         </div>
     )
 }

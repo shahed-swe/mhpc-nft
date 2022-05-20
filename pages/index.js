@@ -8,6 +8,7 @@ import RoadMap from '@/components/roadmap'
 import Mining from '@/components/mining'
 import Founder from '@/components/founder'
 import FAQ from '@/components/faq'
+import Footer from '@/components/footer'
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Mining/>
       <Founder/>
       <FAQ/>
+      <Footer/>
     </div>
   )
 }
