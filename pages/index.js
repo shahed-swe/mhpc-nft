@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import { Navbar } from '@/components/navbar/index'
 import Header from '@/components/header'
@@ -8,6 +7,7 @@ import Features from '@/components/features'
 import RoadMap from '@/components/roadmap'
 import Mining from '@/components/mining'
 import Founder from '@/components/founder'
+import FAQ from '@/components/faq'
 
 export default function Home() {
 
@@ -24,6 +24,7 @@ export default function Home() {
       <RoadMap/>
       <Mining/>
       <Founder/>
+      <FAQ/>
     </div>
   )
 }
