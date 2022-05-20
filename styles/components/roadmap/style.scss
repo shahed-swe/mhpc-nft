@@ -163,3 +163,9 @@
         display: none;
     }
 }
+
+.roadmap-last-section {
+    height: 200px;
+    background: linear-gradient(to top, #2E5073 0%, #00000000 100%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}

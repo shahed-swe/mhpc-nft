@@ -1,23 +1,29 @@
-.header-main {
-    height: 100%;
-    background-image: url("../../../public/background.png");
+.mining-main {
+    height: 450px;
+    background-image: url("../../../public/lastimage.png");
     background-size: 100vw 70vh;
+    margin-top: -250px;
 }
 
-.header-section {
+.mining-section {
     .inner-section {
-        color: white;
-        margin-left: 4rem;
-        width: 50%;
+        color: black;
+        text-align: center;
+        width: 100%;
         position: relative;
         top: 20%;
         height: 100%;
-        h1 {
+        .top-text {
             padding-top: 10rem;
-            padding-bottom: 2rem;
             margin-bottom: 0;
             font-weight: 400;
             font-size: 26px;
+        }
+        .bottom-text {
+            margin-top: 0;
+            padding-bottom: 1rem;
+            font-weight: bolder;
+            font-size: 30px;
         }
         .inner-button {
             color: white;
@@ -31,7 +37,7 @@
     }
 }
 
-.header-last-section {
+.mining-last-section {
     // position: relative;
     height: 200px;
     // top: -200px;

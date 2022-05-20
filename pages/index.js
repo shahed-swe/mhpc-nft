@@ -6,6 +6,7 @@ import About from '@/components/about'
 import Catalogue from '@/components/catalogue'
 import Features from '@/components/features'
 import RoadMap from '@/components/roadmap'
+import Mining from '@/components/mining'
 
 export default function Home() {
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Catalogue/>
       <Features/>
       <RoadMap/>
+      <Mining/>
     </div>
   )
 }
