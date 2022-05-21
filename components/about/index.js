@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const About  = () => {
     return (
-        <div className="about-section" >
+        <div className="about-section" id="about">
             <div className='about-innersec'>
                 <div className='golden-horse'>
                     <Image src={GolderHorse} alt="golden-horse" />

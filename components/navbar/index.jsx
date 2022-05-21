@@ -29,8 +29,8 @@ export const Navbar = () => {
             </div>
 
             <div className="rc_nav" id="centered_nav">
-                <a href="#home" title="Home">ABOUT</a>
-                <a href="#services" title="Services">ROADMAP</a>
+                <a href="#about" title="Home">ABOUT</a>
+                <a href="#roadmap" title="Services">ROADMAP</a>
                 <a href="#about" title="About">TEAM</a>
                 <a href="#contact" title="Contact">CONTACT US</a>
                 <a href="#lego" title="Menu" style={{ fontSize: "18px"}} className="icon" onClick={() => changeNav()}>&#9776;</a>
